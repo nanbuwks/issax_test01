@@ -7,5 +7,5 @@ while 1:
   time.sleep(1)
   os.system('echo \"0\" > /sys/class/leds/led0/brightness')
   time.sleep(1)
-  // print("Hello IoT from isaax")
+  print("Hello IoT from isaax with LED")
 
