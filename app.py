@@ -1,6 +1,11 @@
+#!/usr/bin/python
 import time
-
-while True:
-	print("Hello IoT from isaax")
-	time.sleep(5)
+import os
+os.system('echo \"none\" > /sys/class/leds/led0/trigger')
+while 1:
+  os.system('echo \"255\" > /sys/class/leds/led0/brightness')
+  time.sleep(1)
+  os.system('echo \"0\" > /sys/class/leds/led0/brightness')
+  time.sleep(1)
+  // print("Hello IoT from isaax")
 
